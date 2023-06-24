@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  /* background: url(./images/fondo4.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Belanosima", sans-serif;
+
+  overflow: hidden;
+}
+
+.banner {
+  margin: 2rem;
+
+  padding: 2rem;
+  height: 400px;
+  background-image: url("./src/assets/rectangle1.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner > h1 {
+  padding: .5rem;
+  text-align: center;
+  max-width: 50%;
+  max-height: 79%;
+  font-size: 3vw;
+  margin: 0 auto;
+}
+
+article {
+  margin-top: 3rem;
+  height: calc(100% - 500px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn_container {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+
+}
+
+button {
+  padding: 1rem;
+  border: none;
+  
+  background-color:#ffffff;
+  transition: 0.3s;
+  box-shadow: 10px 10px 26px -7px rgba(0, 0, 0, 0.75);
+  
+}
+
+
+
+button:active {
+  background-color: lightslategray;
+  transform: translate(2px, 2px);
+  box-shadow: 5px 5px 13px -3.5px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 900px) {
+  .banner > h1 {
+    text-align: center;
+    max-width: 69%;
+    max-height: 75%;
+    font-size: 4vw;
+    margin: 0 auto;
+  }
+  .btn_container {
+    margin-top: 1rem;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    
+  }
+
+  .btn_container:hover{
+    margin-top: 1rem;
+  }
+}
+
+.fade-enter{
+  opacity: 0;
+}
+.fade-exit{
+  opacity: 1;
+}
+.fade-enter-active{
+  opacity: 1;
+}
+.fade-exit-active{
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active{
+  transition: opacity 300ms;
+}
+
+.image-container {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: move 5s infinite;
+}
+.image-container>img{
+  transform: scaleY(-1);
+}
+
+@keyframes move {
+  0% {
+    top: calc(100vh * random());
+    left: calc(100vw * random());
+  }
+  25% {
+    top: calc(100vh * random());
+    left: calc(100vw * random());
+  }
+  50% {
+    top: calc(100vh * random());
+    left: calc(100vw * random());
+  }
+  75% {
+    top: calc(100vh * random());
+    left: calc(100vw * random());
+  }
+  100% {
+    top: calc(100vh * random());
+    left: calc(100vw * random());
+  }
+}
+
+@media only screen and (min-width: 900px) {
+
+  .btn_container {
+    margin-top: 10rem;
+    transition: .3s;
+   
+  }
+
+  .btn_container:hover{
+    margin-top: 10rem;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .banner > h1 {
+    text-align: center;
+    max-width: 69%;
+    max-height: 75%;
+    font-size: 3.8vw;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 648px) {
+  .banner > h1 {
+    text-align: center;
+    max-width: 100%;
+    max-height: 75%;
+    font-size: 3.5vw;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .banner > h1 {
+    text-align: center;
+    max-width: 100%;
+    max-height: 75%;
+    font-size: 4vw;
+    margin: 0 auto;
+  }
+
+
+}
+
+/* .banner > img {
+  max-width: 100%;
+}
+.banner > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+} */
