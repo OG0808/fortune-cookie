@@ -5,9 +5,9 @@ const ImageAnimation = () => {
   return <div className="image-container">
    <div id='ye'></div>
    <div id='equis'></div>
-   <img className='cokie1' src="/images/fortune.png"></img>
-   <img className='cokie2' src="/images/fortune.png"></img>
-   <img className='cokie3' src="/images/fortune.png"></img>
+   <img className='cokie1' src="/fortune.png"></img>
+   <img className='cokie2' src="/fortune.png"></img>
+   <img className='cokie3' src="/fortune.png"></img>
   </div>;
 };
 
