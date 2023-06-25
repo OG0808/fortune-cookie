@@ -9,7 +9,7 @@ function App() {
 
   const [index, setIndex] = useState(0)
 
-  const [backRamdon, setBackRamdon] = useState(0)
+  const [backRamdon, setBackRamdon] = useState(1)
 
   const backRaondom = () => {
      const nuevoContador = backRamdon + Math.floor(Math.random() *  arr.length);
@@ -41,7 +41,7 @@ function App() {
   
 
 
-  document.body.style.backgroundImage = `url(./src/images/fondo${backRamdon}.jpg)`; 
+  document.body.style.backgroundImage = `url(/images/fondo${backRamdon}.jpg)`; 
 
   return (
     <div>
