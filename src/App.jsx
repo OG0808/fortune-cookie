@@ -41,7 +41,7 @@ function App() {
   
 
 
-  document.body.style.backgroundImage = `url(/images/fondo${backRamdon}.jpg)`; 
+  document.body.style.backgroundImage = `url(/fondo${backRamdon}.jpg)`; 
 
   return (
     <div>
